@@ -249,7 +249,7 @@ public extension IQKeyboardManager {
         if isNonScrollableTextView {
             move = textFieldViewRectInWindow.maxY - visibleHeight + bottomLayoutGuide
         } else {
-            move = min(textFieldViewRectInRootSuperview.minY-(topLayoutGuide), textFieldViewRectInWindow.maxY - visibleHeight + bottomLayoutGuide)
+            move = min(textFieldViewRectInRootSuperview.minY-(topLayoutGuide), textFieldViewRectInWindow.maxY - visibleHeight)
         }
 
         showLog("Need to move: \(move)")
